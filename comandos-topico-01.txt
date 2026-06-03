@@ -1,0 +1,11 @@
+pwd - mostra o diretório atual
+
+whoami - mostra o utilizador atual do sistema
+
+hostname - mostra o nome da máquina
+
+uname -a - mostra informações completas do sistema Linux
+
+df -h - mostra o espaço disponível no disco
+
+free -h - mostra a memória RAM disponível
