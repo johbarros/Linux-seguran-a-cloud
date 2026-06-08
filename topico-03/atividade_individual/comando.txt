@@ -1,0 +1,40 @@
+# Comandos utilizados na atividade
+
+mkdir linux-seguranca-cloud
+cd linux-seguranca-cloud
+
+mkdir topico-03
+cd topico-03
+
+mkdir atividade-individual
+cd atividade-individual
+
+mkdir site evidencias
+
+touch site/index.html
+touch comandos.txt
+touch publicacao.md
+touch validacao.md
+touch README.md
+
+# Instalação do servidor Apache
+sudo apt update
+sudo apt install apache2 -y
+
+# Verificar estado do serviço
+sudo systemctl status apache2
+
+# Copiar ficheiro para publicação
+sudo cp site/index.html /var/www/html/
+
+# Reiniciar servidor (se necessário)
+sudo systemctl restart apache2
+
+# Testar servidor
+curl http://localhost
+
+# Git
+git status
+git add .
+git commit -m "atividade topico 03"
+git push
