@@ -1,0 +1,67 @@
+# Tópico 02 - Comandos xxutilizados
+
+## Identificação do utilizador
+
+whoami
+→ Mostra o utilizador atual do sistema
+Output: jo
+
+id
+→ Mostra o ID do utilizador, grupo principal e grupos secundários
+Output: uid=1000(jo) gid=1000(jo) groups=...
+
+groups
+→ Mostra todos os grupos do utilizador
+Output: jo sudo (exemplo)
+
+---
+
+## Criação da estrutura de trabalho
+
+mkdir -p topico-02-individual/evidencias
+→ Cria a pasta principal e a pasta de evidências
+
+cd topico-02-individual
+→ Acede à pasta do projeto
+
+touch comandos-utilizados.txt permissoes.md acesso-remoto.md
+→ Cria os ficheiros necessários
+
+---
+
+## Criação de ficheiros de teste
+
+mkdir teste
+→ Cria pasta de testes
+
+cd teste
+→ Entra na pasta de testes
+
+touch publico.txt restrito.txt script.sh
+→ Cria ficheiros para testes de permissões
+
+ls -l
+→ Lista ficheiros com permissões
+
+---
+
+## Aplicação de permissões
+
+chmod 644 publico.txt
+→ Permite leitura para todos e escrita apenas ao dono
+
+chmod 640 restrito.txt
+→ Permite leitura ao grupo e acesso total ao dono
+
+chmod u+x script.sh
+→ Permite execução do script apenas pelo utilizador dono
+
+ls -l
+→ Verifica permissões aplicadas
+
+---
+
+## Execução do script
+
+./script.sh
+→ Executa o script bash
