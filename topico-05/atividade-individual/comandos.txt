@@ -1,0 +1,7 @@
+uptime
+free -h
+df -h
+systemctl status apache2
+journalctl -xe
+journalctl -b
+journalctl -p 3 -xb
